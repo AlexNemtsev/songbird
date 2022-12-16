@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import './style.css';
 import soundRight from './right.mp3';
 import soundWrong from './wrong.mp3';
@@ -290,5 +289,3 @@ popUpButton.addEventListener('click', () => {
 });
 
 setLanguage();
-
-console.log('Ползунок времени у плеера отсутствует, чтобы у игрока не было подсказок в виде продолжительности аудио');
