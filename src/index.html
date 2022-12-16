@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songbird</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="top-panel">
+      <h2 class="top-panel__header">SongBird</h2>
+      <p class="top-panel__score"></p>
+    </div>
+    <div class="questions"></div>
+  </header>
+  <main class="main">
+    <section class="home-page">
+      <select class="home-page__lang-select">
+        <option value="ru">🇷🇺</option>
+        <option value="en">🇬🇧</option>
+      </select>
+      <div class="home-page__main">
+        <h1 class="home-page__header">SongBird</h1>
+        <button class="home-page__button button" type="button" id="new-game-btn"
+          data-tooltip="Ползунок времени у плеера отсутствует, чтобы у игрока не было подсказок в виде продолжительности аудио"></button>
+        <button class="home-page__button button" type="button" id="continue-game-btn"></button>
+      </div>
+      <div class="home-page__footer">
+        <a href="https://github.com/AlexNemtsev" target="_blank" class="home-page__link">Alex Nemtsev, 2022</a>
+        <a href="https://rs.school/js/" target="_blank">
+          <img src="https://rs.school/images/rs_school_js.svg" alt="RS School logo" width="120">
+        </a>
+      </div>
+    </section>
+    <section class="question">
+      <img src="https://nationalzoo.si.edu/sites/default/files/conservation/migratory-birds/ftb-placeholder-image.png"
+        alt="bird placeholder" class="question__img">
+      <h2 class="question__name bird-name">*****</h2>
+    </section>
+    <section class="answers"></section>
+    <section class="bird-desc"></section>
+    <button disabled="disabled" class="main__button button" type="button"></button>
+    <section class="congrat congrat_hidden">
+      <h2 class="congrat__header"></h2>
+      <p class="congrat__info plain-text"></p>
+      <button class="congrat__btn button" type="button"></button>
+    </section>
+  </main>
+</body>
+
+</html>
